@@ -13,7 +13,7 @@ const teachers = [
 const reversedTeachers = [];
 
 for (let i = 0; i < teachers.length; i++) {
-  reversedTeachers.unshift(teachers[i]);
+  reversedTeachers.unshift(teachers[i]); //si poteva fare con push
 }
 
 console.log(reversedTeachers);
@@ -24,7 +24,7 @@ const longNames = [];
 
 for (let i = teachers.length-1; i >= 0; i--) {
   if (teachers[i].length >= 5) {
-    longNames.unshift(teachers[i]);
+    longNames.unshift(teachers[i]); //si poteva fare con push
   }
 }
 
@@ -46,4 +46,5 @@ for (let i = 0; i < teachers.length; i++) {
 console.log(isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.toString();
+console.log(teachersString);
